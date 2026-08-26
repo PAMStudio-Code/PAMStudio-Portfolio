@@ -1,8 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { ArrowRight, Menu, X, SquareCode } from 'lucide-react'
+import { ArrowRight, Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { Logo } from '@/components/logo'
 
 const links = [
   { href: '#home', label: 'Home' },
@@ -31,8 +32,8 @@ export function Navbar() {
       )}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#home" className="flex items-center gap-2 text-xl font-bold tracking-tight">
-          <SquareCode className="size-6 text-brand" strokeWidth={2.2} />
+        <a href="#home" className="flex items-center gap-2.5 text-xl font-bold tracking-tight">
+          <Logo className="size-8" />
           <span>
             PAM<span className="text-brand">Studio</span>
           </span>
