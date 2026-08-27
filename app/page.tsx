@@ -59,7 +59,7 @@ function DnaBackground() {
         ctx.lineWidth = 1.5
         ctx.stroke()
 
-        // Strand 1 node (Cyan #00FFFF)
+        // Strand 1 (Cyan #00FFFF)
         const size1 = Math.max(2, 4.5 + sin * 2)
         ctx.beginPath()
         ctx.arc(centerX + x1, centerY + y1, size1, 0, Math.PI * 2)
@@ -68,7 +68,7 @@ function DnaBackground() {
         ctx.shadowBlur = 12
         ctx.fill()
 
-        // Strand 2 node (Violet #8F00FF)
+        // Strand 2 (Violet #8F00FF)
         const size2 = Math.max(2, 4.5 - sin * 2)
         ctx.beginPath()
         ctx.arc(centerX + x2, centerY + y2, size2, 0, Math.PI * 2)
@@ -110,11 +110,6 @@ export default function Page() {
         <Projects />
         <About />
         <Contact />
-        <SiteFooter />
-      </div>
-    </main>
-  )
-}
         <SiteFooter />
       </div>
     </main>
