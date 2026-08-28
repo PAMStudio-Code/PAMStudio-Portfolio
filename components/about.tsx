@@ -12,7 +12,7 @@ export function About() {
             About Me
           </p>
           <h2 className="text-balance text-4xl font-bold leading-tight tracking-tight md:text-5xl">
-            Class 10 student.
+           Just a school student,
             <br />
             Building AI solutions.
           </h2>
@@ -33,7 +33,7 @@ export function About() {
           </p>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
             My academic journey is heavily driven by a love for the sciences, and my future goal is
-            to study at an IISER (Indian Institutes of Science Education and Research). By blending
+            to pursue research in feild of science. By blending
             rigorous scientific fundamentals with my passion for technology, I&apos;m constantly
             exploring new ways to engineer tools that solve real-world problems.
           </p>
