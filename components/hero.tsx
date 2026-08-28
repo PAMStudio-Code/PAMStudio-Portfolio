@@ -37,8 +37,8 @@ export function Hero() {
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">
-          Hi, I&apos;m Pushpam Kumar — a student developer who leverages AI to build smart,
-          clean, and modern applications. Welcome to my creative studio.
+          Hi! Welcome to PAMStudio. Created by a student developer who leverages AI to build smart,
+          clean, and modern applications.Enjoy this website and reach out if you want to collaborate for a new idea.
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
