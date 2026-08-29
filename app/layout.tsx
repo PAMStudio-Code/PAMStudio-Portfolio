@@ -17,25 +17,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'PAMStudio',
-  description:
-    'Portfolio of Pushpam Kumar (PAMStudio), a student developer crafting smart, clean, and modern AI-powered applications.',
-  generator: 'v0.app',
+  description: 'Crafting AI powered experiences',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
   },
 }
 
