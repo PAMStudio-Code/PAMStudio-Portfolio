@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   title: 'PAMStudio',
   description: 'Crafting AI powered experiences',
   icons: {
-    icon: '/icon.svg',
-    shortcut: '/icon.svg',
-    apple: '/icon.svg',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
   },
 }
 
