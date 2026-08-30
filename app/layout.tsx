@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${geistMono.variable} bg-background`}>
       <head>
-        <meta name="google-site-verification" content="MLB-YtJJJkzSU9DYavipNIPDYxByrSVJPzo5RLs3wgA" />
+       <meta name="google-site-verification" content="MLB-YtJJJkzSU9DYavipNIPDYxByrSVJPzo5RLs3wgA" />
         <link rel="icon" href="/icon.png?v=3" type="image/png" sizes="any" />
         <link rel="shortcut icon" href="/icon.png?v=3" type="image/png" />
         <link rel="apple-touch-icon" href="/icon.png?v=3" />
