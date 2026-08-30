@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title: 'PAMStudio | Crafting AI-powered experiences',
   description: 'Hi! Welcome to PAMStudio. Created by a student developer leveraging AI to build smart, clean, and modern web applications.',
   keywords: ['PAMStudio', 'AI Developer', 'Portfolio', 'Next.js Developer'],
-  verification: { google: "MLB-YtJJJkzSU9DYavipNIPDYxByrSVJPzo5RLs3wgA"}
+  verification: { google: "MLB-YtJJJkzSU9DYavipNIPDYxByrSVJPzo5RLs3wgA"},
   icons: {
     icon: '/icon.png',
     shortcut: '/icon.png',
