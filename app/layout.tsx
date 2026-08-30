@@ -16,12 +16,29 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "PAMStudio",
-  description: "Crafting AI powered experiences",
+  metadataBase: new URL('https://pamstudio-pe7wx4igc-pam-studio.vercel.app'),
+  title: 'PAMStudio | Crafting AI-powered experiences',
+  description: 'Hi! Welcome to PAMStudio. Created by a student developer leveraging AI to build smart, clean, and modern web applications.',
+  keywords: ['PAMStudio', 'AI Developer', 'Portfolio', 'Next.js Developer'],
   icons: {
-    icon: "/icon.png",
-    shortcut: "/icon.png",
-    apple: "/icon.png",
+    icon: '/icon.png',
+    shortcut: '/icon.png',
+    apple: '/icon.png',
+  },
+  openGraph: {
+    title: 'PAMStudio | Crafting AI-powered experiences',
+    description: 'Portfolio and modern web applications built by PAMStudio.',
+    url: 'https://pamstudio-pe7wx4igc-pam-studio.vercel.app',
+    siteName: 'PAMStudio',
+    images: [
+      {
+        url: '/icon.png',
+        width: 512,
+        height: 512,
+        alt: 'PAMStudio Logo',
+      },
+    ],
+    type: 'website',
   },
 }
 
