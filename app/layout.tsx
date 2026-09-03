@@ -4,7 +4,7 @@ import './globals.css'
 export const metadata: Metadata = {
   metadataBase: new URL('https://pamstudio.vercel.app'),
   title: 'PAMStudio | Crafting AI-powered experiences',
-  description: 'Hi! Welcome to PAMStudio. Created by a student developer leveraging AI to build smart, clean, and modern web applications.',
+  description: 'Hi! Welcome to PAMStudio. Hi! a 10th-grade student and a developer based in India blending AI with modern web frameworks to build clean, high-performance applications.',
   applicationName: 'PAMStudio',
   icons: {
     icon: '/icon.png',
