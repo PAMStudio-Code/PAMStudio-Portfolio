@@ -85,7 +85,7 @@ export function Projects() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-semibold transition-colors hover:text-brand"
               >
-                View Project <ArrowRight className="size-4" />
+                Launch App <ArrowRight className="size-4" />
               </a>
             </div>
           </Reveal>
