@@ -24,16 +24,16 @@ export function About() {
         >
           <p className="text-lg leading-relaxed text-muted-foreground">
             Hello! I&apos;m Pushpam Kumar, a 10th-grade student based in India with a deep passion
-            for coding and exploring the frontiers of Artificial Intelligence. While balancing my
+            for making creative solutions and exploring the frontiers of Artificial Intelligence. While balancing my
             academics, my primary aim is to{' '}
             <strong className="font-semibold text-foreground">
-              create powerful, tailored AI solutions for my clients
+              build custom, full-stack AI webapps and interactive tools.
             </strong>
             , turning complex ideas into intuitive, modern applications.
           </p>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
             My academic journey is heavily driven by a love for the sciences, and my future goal is
-            to pursue research in feild of science. By blending
+            to pursue research in field of science. By blending
             rigorous scientific fundamentals with my passion for technology, I&apos;m constantly
             exploring new ways to engineer tools that solve real-world problems.
           </p>
