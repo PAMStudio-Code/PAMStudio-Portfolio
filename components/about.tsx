@@ -27,7 +27,7 @@ export function About() {
             for making creative solutions and exploring the frontiers of Artificial Intelligence. While balancing my
             academics, my primary aim is to{' '}
             <strong className="font-semibold text-foreground">
-              build custom, full-stack AI webapps and interactive tools.
+              build custom, full-stack AI webapps and interactive tools
             </strong>
             , turning complex ideas into intuitive, modern applications.
           </p>
