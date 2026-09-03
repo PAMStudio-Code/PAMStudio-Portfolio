@@ -35,14 +35,14 @@ export function Projects() {
                 aria-hidden="true"
                 className="pointer-events-none absolute inset-0 select-none overflow-hidden font-mono text-[10px] leading-5 text-brand/25"
               >
-                <span className="absolute left-3 top-2">a² + b² = c²</span>
-                <span className="absolute right-4 top-4">∫ f(x) dx</span>
-                <span className="absolute left-6 top-14">H₂O + CO₂</span>
-                <span className="absolute right-6 top-16">v = u + at</span>
-                <span className="absolute bottom-14 left-4">πr²</span>
-                <span className="absolute bottom-10 right-8">E = mc²</span>
-                <span className="absolute bottom-3 left-10">sin²θ + cos²θ = 1</span>
-                <span className="absolute bottom-5 right-4">Δ = b² − 4ac</span>
+                <span className="absolute left-3 top-2">AI Product Development Services</span>
+                <span className="absolute right-4 top-4">Full Stack Web Apps</span>
+                <span className="absolute left-6 top-14">TailWind CSS</span>
+                <span className="absolute right-6 top-16">TypeScript</span>
+                <span className="absolute bottom-14 left-4">React</span>
+                <span className="absolute bottom-10 right-8">Vercel</span>
+                <span className="absolute bottom-3 left-10">Next.js</span>
+                <span className="absolute bottom-5 right-4">Open AI API</span>
               </div>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
