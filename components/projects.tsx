@@ -47,12 +47,12 @@ export function Projects() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="https://strack.ai.studio/favicon.svg"
-                alt="StrackCBSE logo"
+                alt="Stracked logo"
                 className="relative size-24 transition-transform duration-700 group-hover:scale-110"
               />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-card/60 via-transparent to-transparent" />
               <a
-                href="https://stracked.vercel.app"
+                href="https://stracked.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="absolute right-4 top-4 inline-flex size-11 items-center justify-center rounded-full border border-white/20 bg-black/40 text-white opacity-0 backdrop-blur-md transition-all duration-300 hover:bg-brand group-hover:opacity-100"
@@ -72,7 +72,7 @@ export function Projects() {
                 </span>
               </div>
               <h3 className="mb-3 text-2xl font-bold transition-colors group-hover:text-brand">
-                StrackCBSE (Class 10)
+                Stracked Class 10
               </h3>
               <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
                 An intelligent study companion for CBSE Class 10 students. Features AI-driven
@@ -80,7 +80,7 @@ export function Projects() {
                 streamline board exam preparation.
               </p>
               <a
-                href="https://stracked.vercel.app"
+                href="https://stracked.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-semibold transition-colors hover:text-brand"
