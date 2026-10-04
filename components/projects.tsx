@@ -46,7 +46,7 @@ export function Projects() {
               </div>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://stracked.vercel.app/favicon.svg"
+                src="https://strack.ai.studio/favicon.svg"
                 alt="StrackCBSE logo"
                 className="relative size-24 transition-transform duration-700 group-hover:scale-110"
               />
@@ -80,7 +80,7 @@ export function Projects() {
                 streamline board exam preparation.
               </p>
               <a
-                href="https://strack.ai.studio"
+                href="https://stracked.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-semibold transition-colors hover:text-brand"
