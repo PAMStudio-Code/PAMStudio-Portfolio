@@ -52,7 +52,7 @@ export function Projects() {
               />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-card/60 via-transparent to-transparent" />
               <a
-                href="https://strack.ai.studio"
+                href="https://strack.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="absolute right-4 top-4 inline-flex size-11 items-center justify-center rounded-full border border-white/20 bg-black/40 text-white opacity-0 backdrop-blur-md transition-all duration-300 hover:bg-brand group-hover:opacity-100"
