@@ -3,15 +3,26 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://pamstudio.vercel.app'),
-  title: 'PAMStudio | Crafting AI-powered experiences',
-  description: 'Hi! Welcome to PAMStudio. Hi! a 10th-grade student and a developer based in India blending AI with modern web frameworks to build clean, high-performance applications.',
+  // Explicit title format prevents Google from attaching "- Vercel"
+  title: 'PAMStudio • Smart AI Web Development & Interactive Experiences',
+  description:
+    'PAMStudio builds cutting-edge web applications, clean modern interfaces, and intelligent AI-powered software engineered with Next.js and Tailwind CSS.',
   applicationName: 'PAMStudio',
+  keywords: [
+    'PAMStudio',
+    'PAM Studio',
+    'PAMStudio Portfolio',
+    'AI Web Development',
+    'Next.js Developer',
+    'Tailwind CSS',
+  ],
   icons: {
     icon: '/icon.png',
   },
   openGraph: {
-    title: 'PAMStudio | Crafting AI-powered experiences',
-    description: 'Portfolio and modern web applications built by PAMStudio.',
+    title: 'PAMStudio • Smart AI Web Development & Interactive Experiences',
+    description:
+      'PAMStudio builds cutting-edge web applications, clean modern interfaces, and intelligent AI-powered software engineered with Next.js and Tailwind CSS.',
     url: 'https://pamstudio.vercel.app',
     siteName: 'PAMStudio',
     images: [
@@ -24,6 +35,13 @@ export const metadata: Metadata = {
     ],
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'PAMStudio • Smart AI Web Development & Interactive Experiences',
+    description:
+      'PAMStudio builds cutting-edge web applications, clean modern interfaces, and intelligent AI-powered software.',
+    images: ['/icon.png'],
+  },
 }
 
 export default function RootLayout({
@@ -31,11 +49,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  // Enhanced Schema explicitly tells Google your site name is "PAMStudio", not "Vercel"
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'PAMStudio',
-    alternateName: ['PAM Studio', 'PAMStudio Portfolio'],
+    alternateName: ['PAM Studio', 'PAMStudio Developer'],
     url: 'https://pamstudio.vercel.app',
   }
 
@@ -48,7 +67,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
-      <body className="bg-[#0B0F17] text-white antialiased">
+      <body className="bg-[#0C1622] text-white antialiased">
         {children}
       </body>
     </html>
