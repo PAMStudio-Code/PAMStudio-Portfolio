@@ -4,7 +4,7 @@ import './globals.css'
 export const metadata: Metadata = {
   metadataBase: new URL('https://pamstudio.vercel.app'),
   // Explicit title format prevents Google from attaching "- Vercel"
-  title: 'PAMStudio • Smart AI Web Development & Interactive Experiences',
+  title: 'PAMStudio',
   description:
     'PAMStudio builds cutting-edge web applications, clean modern interfaces, and intelligent AI-powered software engineered with Next.js and Tailwind CSS.',
   applicationName: 'PAMStudio',
