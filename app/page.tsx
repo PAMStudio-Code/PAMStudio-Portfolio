@@ -47,9 +47,10 @@ function AestheticDnaHero() {
       mouseRef.current.x += (mouseRef.current.targetX - mouseRef.current.x) * 0.05
       mouseRef.current.y += (mouseRef.current.targetY - mouseRef.current.y) * 0.05
 
-      const centerX = canvas.width * 0.72 + mouseRef.current.x * 25
-      const centerY = canvas.height * 0.48 + mouseRef.current.y * 20
-      const tiltAngle = Math.PI / 5 + mouseRef.current.x * 0.12
+    // Noticeable tilt & perspective shift:
+const centerX = canvas.width * 0.72 + mouseRef.current.x * 90
+const centerY = canvas.height * 0.48 + mouseRef.current.y * 60
+const tiltAngle = Math.PI / 5 + mouseRef.current.x * 0.45
 
       for (let i = 0; i < basePairCount; i++) {
         const currentAngle = angle + i * twistRate
@@ -89,7 +90,8 @@ function AestheticDnaHero() {
       }
 
       ctx.shadowBlur = 0
-      angle += 0.007
+    // Spins with your mouse speed:
+angle += 0.007 + Math.abs(mouseRef.current.x) * 0.015
       animationFrameId = requestAnimationFrame(render)
     }
 
