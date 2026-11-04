@@ -120,3 +120,14 @@ export default function Page() {
         <div className="relative z-10">
           <Hero />
         </div>
+      </div>
+
+      <div className="relative z-10 flex flex-col gap-12 sm:gap-20">
+        <Projects />
+        <About />
+        <Contact />
+        <SiteFooter />
+      </div>
+    </main>
+  )
+}
