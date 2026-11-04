@@ -29,7 +29,6 @@ function AestheticDnaHero() {
     resize()
     window.addEventListener('resize', resize)
 
-    // Smoothly track mouse coordinates normalized from -1 to 1
     const handleMouseMove = (e: MouseEvent) => {
       const { innerWidth, innerHeight } = window
       mouseRef.current.targetX = (e.clientX / innerWidth - 0.5) * 2
@@ -45,11 +44,79 @@ function AestheticDnaHero() {
     const render = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-      // Smooth interpolation (lerp) for fluid cursor trailing
       mouseRef.current.x += (mouseRef.current.targetX - mouseRef.current.x) * 0.05
       mouseRef.current.y += (mouseRef.current.targetY - mouseRef.current.y) * 0.05
 
-      // Dynamic reactive center and tilt based on cursor position
       const centerX = canvas.width * 0.72 + mouseRef.current.x * 25
       const centerY = canvas.height * 0.48 + mouseRef.current.y * 20
-      const tilt
+      const tiltAngle = Math.PI / 5 + mouseRef.current.x * 0.12
+
+      for (let i = 0; i < basePairCount; i++) {
+        const currentAngle = angle + i * twistRate
+        const yOffset = (i - basePairCount / 2) * heightStep
+
+        const cos = Math.cos(currentAngle)
+        const sin = Math.sin(currentAngle)
+
+        const x1 = Math.cos(tiltAngle) * (cos * radius) - Math.sin(tiltAngle) * yOffset
+        const y1 = Math.sin(tiltAngle) * (cos * radius) + Math.cos(tiltAngle) * yOffset
+
+        const x2 = Math.cos(tiltAngle) * (-cos * radius) - Math.sin(tiltAngle) * yOffset
+        const y2 = Math.sin(tiltAngle) * (-cos * radius) + Math.cos(tiltAngle) * yOffset
+
+        ctx.beginPath()
+        ctx.moveTo(centerX + x1, centerY + y1)
+        ctx.lineTo(centerX + x2, centerY + y2)
+        ctx.strokeStyle = 'rgba(74, 107, 130, 0.18)'
+        ctx.lineWidth = 1
+        ctx.stroke()
+
+        const size1 = Math.max(1.8, 3.2 + sin * 1.2)
+        ctx.beginPath()
+        ctx.arc(centerX + x1, centerY + y1, size1, 0, Math.PI * 2)
+        ctx.fillStyle = 'rgba(78, 205, 196, 0.55)'
+        ctx.shadowColor = 'rgba(78, 205, 196, 0.3)'
+        ctx.shadowBlur = 6
+        ctx.fill()
+
+        const size2 = Math.max(1.8, 3.2 - sin * 1.2)
+        ctx.beginPath()
+        ctx.arc(centerX + x2, centerY + y2, size2, 0, Math.PI * 2)
+        ctx.fillStyle = 'rgba(157, 126, 219, 0.5)'
+        ctx.shadowColor = 'rgba(157, 126, 219, 0.25)'
+        ctx.shadowBlur = 6
+        ctx.fill()
+      }
+
+      ctx.shadowBlur = 0
+      angle += 0.007
+      animationFrameId = requestAnimationFrame(render)
+    }
+
+    render()
+
+    return () => {
+      window.removeEventListener('resize', resize)
+      window.removeEventListener('mousemove', handleMouseMove)
+      cancelAnimationFrame(animationFrameId)
+    }
+  }, [])
+
+  return (
+    <canvas
+      ref={canvasRef}
+      className="absolute inset-0 pointer-events-none z-0 h-full w-full opacity-60 [mask-image:radial-gradient(ellipse_70%_60%_at_70%_40%,#000_30%,transparent_85%)]"
+    />
+  )
+}
+
+export default function Page() {
+  return (
+    <main className="relative min-h-screen bg-[#0C1622] text-slate-100 overflow-x-hidden">
+      <Navbar />
+
+      <div className="relative w-full overflow-hidden">
+        <AestheticDnaHero />
+        <div className="relative z-10">
+          <Hero />
+        </div>
